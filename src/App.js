@@ -35,19 +35,9 @@ const Container = styled.div`
   @media (min-width: 1300px) { width: 1270px; }
   @media (min-width: 1400px) { width: 1370px; }
 `;
-const HomeFadeIn = keyframes`
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-`;
-const MainWrapper = styled.div`
-animation-duration: .5s;
-animation-name: ${HomeFadeIn};
-animation-fill-mode: both;
-`;
+
+
+
 
 class App extends Component {
   constructor(props, context) {
@@ -73,7 +63,7 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <Router>
-          <MainWrapper>
+          <div>
             <Topper/>
             <MenuButton handleMouseDown={this.handleMouseDown}/>
             <Menu handleMouseDown={this.handleMouseDown}
@@ -95,7 +85,7 @@ class App extends Component {
               </Router>
             </Container>
             <Footer/>
-          </MainWrapper>
+          </div>
         </Router>
       </ApolloProvider>
     )

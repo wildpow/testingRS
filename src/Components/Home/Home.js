@@ -2,8 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel'; 
-// import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
-// import './home.css';
+
 import { Main, SaleWrapper} from './HomeStyles';
 import SaleComp from './SaleComp'
 import CarImg1 from './CarImg1';
